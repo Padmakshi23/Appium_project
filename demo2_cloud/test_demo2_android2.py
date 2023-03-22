@@ -45,9 +45,9 @@ class TestAndroidDeviceCloud(AppiumConfig):
             self.driver.find_element(AppiumBy.XPATH, "//*[contains(@text,'email')]").click()
 
             # send firstnamea as john -
-            self.driver.find_element(AppiumBy.XPATH, "//*[@content-desc='First name']").send_keys("bala")
+            self.driver.find_element(AppiumBy.XPATH, "//*[@content-desc='First name']").send_keys("padmakshi")
             # send lastname as peter -
-            self.driver.find_element(AppiumBy.XPATH, "//*[@content-desc='Last name']").send_keys("bala")
+            self.driver.find_element(AppiumBy.XPATH, "//*[@content-desc='Last name']").send_keys("jain")
 
             # send birthday Aug 20, 1995 - Birthday
             # self.driver.find_element(AppiumBy.XPATH, "//*[@text='Birthday']").send_keys("August 20, 1995")
@@ -78,7 +78,3 @@ class TestAndroidDeviceCloud(AppiumConfig):
             actaul_error = self.driver.find_element(AppiumBy.XPATH,"//android.widget.TextView[@text='There was an "
                                                                    "issue signing in']").text
             assert_that(actaul_error).is_equal_to("There was an issue signing in")
-            # send password as welcome123
-            # send email as test123
-            # click on create
-            # assert the error message of mail id

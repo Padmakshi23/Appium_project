@@ -64,3 +64,4 @@ class TestArts(AppiumConfig):
         self.driver.implicitly_wait(30)
 
         self.swipe_to_element("//*[contains(@text,'Himal')]")
+

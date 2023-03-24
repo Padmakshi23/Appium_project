@@ -38,3 +38,5 @@ class TestArts(AppiumConfig):
         self.driver.execute_script("mobile: scroll", para_dic)
 
         self.driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'UiSelector().textContains("Himala")').click()
+
+
